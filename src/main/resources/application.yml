@@ -1,0 +1,17 @@
+logging:
+  level:
+    web: debug
+
+server:
+  port: 43121
+
+
+management:
+  endpoints:
+    web:
+      base-path: /management
+      exposure:
+        include: ['env', 'health', 'info']
+  endpoint:
+    env:
+      show-values: always
